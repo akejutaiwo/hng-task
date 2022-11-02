@@ -23,7 +23,12 @@ const HomePage = () => {
             
             
         </div>
-        
+        {link.map((item, index) => (
+        <button className="link" key={index}>
+            <a id='' href={item.link}>{item.name}</a>
+        </button>
+        ))}
+       
 
     </div>
   )
