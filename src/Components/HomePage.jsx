@@ -28,7 +28,17 @@ const HomePage = () => {
             <a id='' href={item.link}>{item.name}</a>
         </button>
         ))}
-       
+        <div  className="social">
+          <IconContext.Provider value={{ color: 'skyBlue', size: 30 , width: '2px'}} >
+            <a href='/http://slack.com/akejutaiwo2019' className="disabledCursor" onClick={ (event) => event.preventDefault()}>
+              <FaSlack />
+            </a>
+            <a 
+            href='https://twitter.com/Akeju_TO'>
+              <FaTwitter />
+            </a>
+           </IconContext.Provider>
+        </div>
 
     </div>
   )
